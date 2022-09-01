@@ -1,0 +1,62 @@
+.nav{
+    background-color: transparent;
+    width: auto;
+    height: 4rem;
+    top: 2px;
+    border-radius: 10px;
+    font-family: "Times New Roman";
+}
+
+.nav #ham-links {
+    display: none;
+
+
+}
+
+.nav a {
+color: white;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+display: block;
+font-family: "Times New Roman";
+}
+
+.nav a.icon {
+background: black;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+
+}
+
+a:hover {
+    color: black;
+    background-image: url("image/minecraft-ham-img.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    width: auto;
+  }
+
+.active {
+    color: white;
+  }
+body{
+    background-image: url("image/homepage.png");
+}
+
+.ham-icon{
+    float: left;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color:wheat;
+
+}
+
+.minecraft-img{
+    text-align: center;
+    margin-top: -15%;
+}
