@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="icon/icons-minecraft-0.5.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="gaming.js"></script>
+    <link rel="icon" href="image/minecraft-icon.ico" />
+    <script src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MC Core IndexedDB</title>
+  </head>
+  <body class="database-page">
+    <nav class="nav">
+      <div class="a" id="ham-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html">Home</a>
+        <a href="landing.html">Landing Page</a>
+      </div>
+
+      <a href="javascript:void(0);" class="ham-icon" onclick="hamburger()">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
+    </nav>
+
+    <!-- Create an Indexed Database called Gaming, which will store information (GameName, GameType,
+    Rating) on 10 different games, allow the user to see the list of games, to add a new game and to
+    delete a game -->
+
+    <div class="database-content">
+      <h1 class="database-h1">Gaming</h1>
+      <p class="database-p">
+        This is the <strong>Gaming database</strong>  where you can add your favourite games and delete them.
+        Also give them a rating out of 5 so that others can know if they can must buy them or not.
+      </p>
+
+      <form id="database-form">
+        <input
+          type="text"
+          name=""
+          id="gameName"
+          placeholder="What is your games name?"
+        /><br />
+        <input
+          type="text"
+          name=""
+          id="gameType"
+          placeholder="What type of game is it?"
+        /><br />
+        <input
+          type= "text"
+          
+          id="gameRating"
+          placeholder="What is your rating 1-5?"
+        /><br />
+      </form>
+
+      <div class="database-button">
+        <button class="landing-btn" onclick="addGame()">Add Game</button>
+        <button class="landing-btn" onclick="deleteGame()">Delete Game</button>
+        <button class="landing-btn" onclick="showGames()">Show Games</button>
+        <button class="landing-btn" onclick="clearDatabase()">Clear Games</button>
+        <!-- <button class="landing-btn" onclick="deleteDB()">Delete Database</button> -->
+      </div>
+
+      <!-- Show the database in a list -->
+
+      <h2 class="database-h2">Database output</h2>
+
+      <div class="database-list">
+        <li id="gamesList"></li>
+      </div>
+
+
+        
+    </div>
+
+    <footer class="footer">
+      <button onclick="favicon_click()" id="upscroll">
+        <img class="favicon" id="icon" src="favicon.ico" alt="me" />
+      </button>
+   
+
+      <div class="scroll_tooltip">
+        <span style="color: black" class="tooltip_text"
+          >Click to scroll up!</span
+        >
+        <hr style="color:black;">
+      </div>
+      <a
+        class="footer-a"
+        style="text-decoration: none; color: black"
+        href="about.html"
+        >| About |</a
+      >
+      <a
+        class="footer-a"
+        style="text-decoration: none; color: black"
+        href="contact.html"
+        >Contact |</a
+      >
+      <a
+        class="footer-a"
+        style="text-decoration: none; color: black"
+        href="gallery.html"
+        >Gallery |</a
+      >
+      <a
+        class="footer-a"
+        style="text-decoration: none; color: black"
+        href="landing.html"
+        >Landing Page |</a
+      >
+      <p class="copyright">&copy;2022 Anthonie Slabbert.</p>
+    </footer>
+  </body>
+</html>

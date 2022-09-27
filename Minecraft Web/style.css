@@ -1,25 +1,106 @@
+@font-face {
+
+    font-family: T1;
+
+    src: url(fonts/MinecraftRegular-Bmg3.otf);
+
+    src:local(MinecraftRegular),
+
+    url(fonts/MinecraftRegular-Bmg3.otf)format('truetype');
+
+}
+
+body, html {
+    height: auto;
+    margin: 0;
+    background-attachment: fixed;
+
+}
+
+.buy_button{
+    font-family: T1;
+    background-image: url("image/minecraft-ham-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50px;
+    width: 10em;
+
+}
+
+
+  @keyframes example {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    100% {
+      left: 200px;
+      top: 0px;
+    }
+}
+
+.buy-produck{
+    text-align: center;
+    margin-top: 2em;
+    font-family: T1;
+}
 .nav{
     background-color: transparent;
     width: auto;
     height: 4rem;
     top: 2px;
-    border-radius: 10px;
-    font-family: "Times New Roman";
+    font-family: T1;
+    position: relative;
+
+}
+
+.landing-text{
+    font-family: T1;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 2em;
+    color: black;
+    font-weight: bold;
+}
+
+.landing-text:hover{
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.landing-page{
+    background-image: url("image/landing-page2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: T1;
+}
+
+.minecraftlanding-img{
+    text-align: center;
+    margin-top: -10em;
+
+    position: relative;   
 }
 
 .nav #ham-links {
     display: none;
-
-
 }
 
 .nav a {
 color: white;
 padding: 14px 16px;
 text-decoration: none;
-font-size: 17px;
+font-size: 15px;
 display: block;
-font-family: "Times New Roman";
+font-family: T1;
 }
 
 .nav a.icon {
@@ -31,32 +112,615 @@ top: 0;
 
 }
 
-a:hover {
-    color: black;
+.nav a:hover {
+    color: white;
     background-image: url("image/minecraft-ham-img.png");
     background-repeat: no-repeat;
     height: 50px;
-    width: auto;
+    width: 15em;
   }
 
 .active {
-    color: white;
+    color: wheat;
   }
-body{
+.home-page{
     background-image: url("image/homepage.png");
+    border-style: solid;
+    border-width: 8px;
+    margin-top: auto;
+    background-attachment: fixed;
+
 }
+
+.gallery{
+    background-image: url("image/gallery.jpg");
+    border-style: solid;
+    border-width: 8px;
+    margin-top: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+.top-img{
+    background-image: url("image/minecraft-about.jpg");
+    background-repeat: no-repeat;
+    border-style: solid;
+
+    border-width: 8px;
+}
+
+
+
+.creepers{
+
+    text-align: center;
+
+}
+
 
 .ham-icon{
     float: left;
-    margin-right: 1rem;
-    margin-top: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    color:wheat;
+    color: black;
 
 }
 
 .minecraft-img{
     text-align: center;
-    margin-top: -15%;
+    margin-top: -10em;
+
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+
+
+.summary{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: T1;
+    color: #000;
+    margin-top: 3%;
+    text-shadow: #000 0px 0px 10px;
+}
+
+
+
+.summary:hover{
+    background-color: rgba(255,255,255,0.6);
+}
+.summary-p{
+font-size: 25px;
+
+}
+
+.about-game{
+    text-align: center;
+    font-size: 1em;
+    font-family: T1;
+    color: black;
+    margin-top: auto;
+
+}
+.middle-div{
+    background-image: url("image/underwater.png");
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    font-family: T1;
+    border-style: solid;
+    background-size: cover;
+    border-color: black;
+
+    
+}
+
+
+li{
+    list-style-type: none;
+}
+.about-game:hover{
+    background-color: rgba(255,255,255,.6);
+    border-radius: 10px;
+}
+.about-game{
+    font-size: 25px;
+
+}
+
+.h1-about{
+    margin-top: 0em;
+    text-align: center;
+    font-size: 15em;
+    font-family: T1;
+}
+
+.about-game-p{
+    margin-bottom: 6em;
+    margin-right: auto;
+    margin-left: auto;
+}
+.background-about{
+    margin-bottom: 0em;
+}
+
+
+.contact-page{
+    font-family: T1;
+    background-image: url("image/contact-img.jpg");
+
+    border-style: solid;
+     border-width: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.database-h2{
+    text-align: center;
+    font-size: 2em;
+    font-family: T1;
+    color: black;
+    margin-top: 2em;
+    font-weight: bold;
+
+}
+hr{
+    border-color: black;
+    border-style: none;
+    border-top-style: dashed;
+    border-width: 5px;
+    height: 0px;
+    width: 5%;
+}
+
+.contact-form{
+    text-align: center;
+    margin-top: -8em;
+            
+}
+.contact-from-h2{
+    font-size: 4em;
+    margin-top: 3em;
+    color: #676767;
+    text-shadow: #000 12px 10px 5px;
+}
+
+.database-list{
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
+    font-family: T1;
+    font-size: 1.5em;
+}
+
+.table-database{
+    word-spacing: 1em;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;   
+}
+
+.contact-comments{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    background-color: rgba(255,255,255,0.6);
+    font-size: auto;
+    font-family: T1;
+    color: #000;
+    text-align: center;
+    text-shadow: #000 0px 0px 10px;
+
+}
+
+/* .comments-img{
+    margin-right: 2em;
+} */
+
+input[type=text], input[type=email]{
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-color: transparent;
+    border-bottom: 5px solid #000;
+}
+
+
+textarea {
+    width: 200px;
+    height: 150px;
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-color: transparent;
+    border-bottom: 5px solid #000;
+}
+
+label{
+    font-size: 1.5em;
+    font-family: T1;
+    color: #fff;
+    text-shadow: #000 0px 0px 10px;
+}
+
+.comments-h2{
+    font-size: 3em;
+    color: #676767;
+    text-shadow: #000 0px 0px 10px;
+    margin-top: 7em;
+    font-family: T1;
+    text-align: center;
+}
+.comments-img{
+    width: 10%;
+    height: auto;
+    margin-left: -5em;
+    margin-top: 13em;
+}
+.reviews-img{
+    width: 50%;
+    height: auto;
+    margin-left: -5em;
+    margin-top: 2em;
+}
+.comments-p{
+    font-size: 1.5em;
+    font-family: T1;
+    color: #000;
+    text-align: center;
+    text-shadow: #000 0px 0px 10px;
+    margin-left: 5em;
+    margin-top: -2em;
+}
+
+
+.footer {
+text-align: center;
+background-color: transparent;
+border-radius: 20px;
+margin-bottom: -1em;
+margin-top: 4em;
+font-family: T1;
+}
+
+.copyright {
+font-size: 15px;
+font-family: T1;
+color: #E1D9D1;
+}
+
+#upscroll {
+background-color: transparent;
+border: 1px solid transparent;
+cursor: pointer;
+}
+
+#upscroll:hover {
+background-color: wheat;
+border-radius: 20px;
+}
+
+.footer-a:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    translate: 1s;
+}
+
+.map{
+
+    text-align: center;
+
+}
+
+
+
+/* .footer-about{
+    text-align: center;
+    margin-bottom: 5em;
+    font-size: 1.5em;
+    font-family: T1;
+    color: #000;
+    text-shadow: #000 0px 0px 10px;
+    text-decoration: none;
+    transition: 1s;
+
+} */
+
+.map-h2{
+    font-size: 4em;
+    margin-top: 3em;
+    color: #676767;
+    text-shadow: #000 12px 10px 5px;
+}
+
+
+.m-l:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.m-d:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+.m:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.slideshow-container {
+max-width: 500px;
+position: relative;
+margin: auto;
+}
+
+.mySlides {
+display: none;
+}
+
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #333;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+background-color: #ccc;
+}
+
+
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1;
+}
+
+.database-content{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    background-color: rgba(255,255,255,0.6);
+    font-size: auto;
+    font-family: T1;
+    color: #000;
+    text-align: center;
+    text-shadow: #000 0px 0px 10px;
+
+}
+.database-button{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    font-size: auto;
+    font-family: T1;
+    color: #000;
+    text-align: center;
+    text-shadow: #000 0px 0px 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.landing-btn{
+    box-shadow: 5px 5px 5px #000;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+
+
+}
+
+.database-page{
+    background-image: url("image/database-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: T1;
+}
+.video {
+text-align: center;
+margin-top: 50px;
+font-family: T1;
+margin-top: 15em;
+}
+.vid-h2 {
+font-size: 30px;
+font-weight: 600;
+margin-bottom: 10px;
+font-family: T1;
+color: white;
+text-align: center;
+text-shadow: #000 12px 10px 5px;
+
+}
+.vid-h3 {
+font-size: 20px;
+font-weight: 400;
+margin-bottom: 10px;
+font-family: T1;
+color: white;
+
+text-shadow: #000 12px 10px 5px;
+}
+
+.h1-gallery{
+    font-size: 3em;
+    color: white;
+    text-shadow: #000 12px 10px 5px;
+    text-align: center;
+    font-family: T1;
+}
+
+.gallery-h1{
+    font-size: 3em;
+
+    color: white;
+    text-shadow: #000 12px 10px 5px;
+    text-align: center;
+    font-family: T1;
+}
+
+.img-h2{
+    font-size: 2em;
+    color: white;
+    text-shadow: #000 12px 10px 5px;
+    text-align: center;
+    font-family: T1;
+    margin-top: 6em;
+}
+
+.landing-video{
+    width: 100%;
+    height: auto;
+    margin-top: 5em;
+    text-align: center;
+}
+
+.btn-contact{
+    background:    #333;
+    border-radius: 1000px;
+    box-shadow:    7px 7px #000000;
+    width:         15em;
+    height:        3em;
+    color:         #ffffff;
+    font-family:   T1;
+    text-align:    center;
+    text-shadow:   2px 2px #000000;
+}
+
+/* <!-- Animation for the h1-landing --> */
+
+.h1-landing{
+    font-size: 9em;
+    color: black;
+    text-shadow: #333 12px 10px 5px;
+    text-align: center;
+    font-family: T1;
+    animation: 2s;
+}
+
+.h2-landing{
+    animation: letter_bounce 2s ease-in-out infinite;
+
+}
+
+@keyframes moveToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes letter_bounce {
+
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+    
+  }
+
+
+
+.h1-landing{
+    /* animation: letter_bounce 2s ease-in-out infinite; */
+
 }

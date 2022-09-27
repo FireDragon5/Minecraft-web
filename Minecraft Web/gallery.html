@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="image/minecraft-icon.ico" />
+    <script src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MC Core</title>
+  </head>
+  <body class="gallery" onload="mySlides"()>
+    <nav class="nav">
+      <div class="a" id="ham-links">
+        <a href="index.html">Home</a>
+        <a href="landing.html">Landing Page</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="gaming.html">Database</a>
+
+
+      </div>
+
+      <a href="javascript:void(0);" class="ham-icon" onclick="hamburger()">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
+
+    </nav>
+    <h1 class="gallery-h1">Some stuff about Minecraft</h1>
+
+
+      <!-- Pictures and videos about the game.
+    II. The pictures must be in a slideshow presentation. -->
+
+    <h2 class="img-h2"> Photo's that will make you want to play Minecraft!!</h2>
+ 
+    <div class="slideshow-container"> 
+
+
+        
+      <div class="mySlides fade" style="display: block;">
+        <div class="numbertext">1 / 3</div>
+        <img src="image/gallery-slide1.png" style="width:100%">
+        <div class="text">Clock Mantion.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="image/gallery-slide2.jpg" style="width:100%">
+        <div class="text">The waters of Minecraft.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="image/gallery-slide3.jpg" style="width:100%">
+        <div class="text">Small Wooden House.</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <!-- Video about Minecraft -->
+
+    <div class="video">
+      <h2 class="vid-h2">The life and changes of Minecraft</h2>
+      <h3 class="vid-h3">2012 VS 2022 Minecraft (Skip the Tutorial)</h3>
+      <video
+      width="500"
+      height="300"
+      controls
+      autoplay
+      loop
+      muted
+      src="video/vs. 2022 Minecraft.mp4"
+      ></video>
+    </div>
+
+    <div class="video">
+      <h2 class="vid-h2">Want to see a Computer made in Minecraft check this video!!</h2>
+      <h3 class="vid-h3">Quad-Core Redstone Computer (legomasta99)</h3>
+      <video
+      width="500"
+      height="300"
+      controls
+      autoplay
+      loop
+      muted
+      src="video/[Minecraft Computer Engineering] - Quad-Core Redstone Computer v5.0 [12k sub special!].mp4"
+      ></video>
+    </div>
+
+
+    
+
+
+    <footer class="footer">
+      <button onclick="favicon_click()" id="upscroll">
+        <img class="favicon" id="icon" src="favicon.ico" alt="me" />
+      </button>
+
+      <div class="scroll_tooltip">
+        <span style="color: black" class="tooltip_text"
+          >Click to scroll up!</span
+        >
+      </div>
+      <a class="footer-a" style="text-decoration: none; color: white" href="about.html">About</a>
+      <a class="footer-a" style="text-decoration: none; color: white" href="contact.html"
+        >Contact</a
+      >
+      <a class="footer-a" style="text-decoration: none; color: white" href="gallery.html"
+        >Gallery</a
+      >
+      <a class="footer-a" style="text-decoration: none; color: white" href="landing.html"
+        >Landing Page</a
+      >
+      <p class="copyright">&copy;2022 Anthonie Slabbert.</p>
+    </footer>
+    
+
+
+      
+    </body>
+
+</html>

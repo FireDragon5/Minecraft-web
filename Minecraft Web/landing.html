@@ -16,17 +16,15 @@
 
     <title>MC Core</title>
   </head>
-  <body class="home-page">
-
-    <!-- hamburgers  -->
-
+  <body class="landing-page">
     <nav class="nav">
       <div class="a" id="ham-links">
-        <a href="landing.html">Landing Page</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="gallery.html">Gallery</a>
+        <a href="index.html">Home</a>
         <a href="gaming.html">Database</a>
+
       </div>
 
       <a href="javascript:void(0);" class="ham-icon" onclick="hamburger()">
@@ -35,75 +33,62 @@
     </nav>
 
     
+    <!-- <div>
 
-    <!-- image animations -->
-    <div class="minecraft-img">
-      <img
-        style="width: 500px"
-        src="image/logo-minecraft (2).svg"
-        alt="minecraft"
-      />
-    </div>
+      <div class="minecraftlanding-img">
+        <img
+          style="width: 500px"
+          src="image/logo-minecraft (2).svg"
+          alt="minecraft"
+        />
+      </div> -->
 
-    <div class="summary">
-      <h1>Minecraft Core</h1>
-      <p class="summary-p">
-        Minecraft is a sandbox game that allows players to create and explore a
-        world full of adventure and danger. Minecraft is a video game in which
-        players create and break apart various kinds of blocks in
-        three-dimensional worlds. The game's two main modes are Survival and
-        Creative. In Survival, players must find their own building supplies and
-        food. They also interact with blocklike mobs, or moving creatures.
+    <!-- A brief description of the what is being offered. -->
+    <h1 class="h1-landing">
+      <span class="sp-m">M</span>
+      <span class="sp-c">C</span>
+      <span class="sp-c">C</span>
+      <span class="sp-o">O</span>
+      <span class="sp-r">R</span>
+      <span class="sp-e">E</span>
+    </h1>
+      <!-- <span>C</span>
+      <span>C</span>
+      <span>O</span>
+      <span>R</span>
+      <span>E</span>
+      
+      MC Core
+    </h1> -->
+
+    <div class="landing-text">
+      <!-- Animation for the h1 -->
+      
+      <p>
+        MC Core is a Minecraft server that is currently in development. We offer
+        a variety of different gamemodes and features. We are currently looking
+        for staff members to help us with the development of the server and to
+        help us grow our community. We are also looking for players to join our
+        community and help us grow. We are currently looking for builders,
+        developers, and moderators. If you are interested in joining our
+        community, please <a href="contact.html" style="text-decoration: underline; color: green;">contact us</a>.
       </p>
     </div>
 
-    <div class="buy-produck">
-      <h2>Buy Minecraft</h2>
+    <!-- Add a video of Minecraft gameplay in a flexbox  -->
 
-      <div class="m-game">
-        <div class="game-img">
-          <img
-            class="m"
-            style="width: 200px"
-            src="image/minecraft.jpg"
-            alt="minecraft"
-            id="m"
-            onclick="img_click()"
-          />
 
-          <img
-            class="m-d"
-            src="image/minecraft-d.jpg"
-            alt="minecraft"
-            style="width: 200px"
-            onclick=""
-            id="m-d"
-            onclick="img_click()"
-          />
-          <img
-            class="m-l"
-            src="image/Minecraft-l.jpg"
-            alt="minecraft"
-            style="width: 200px"
-            id="m-l"
-            onclick="img_click()"
-          />
-        </div>
-      </div>
-
-      <form>
-        <input
-          id="email-home"
-          type="email"
-          placeholder="Enter your email"
-          required
-        /><br /><br />
-        <button class="buy_button" onclick="buy_Now()" type="submit">
-          Buy Now
-        </button>
-      </form>
-      <br />
-    </div>
+    <div class="landing-video">
+      <h2 class="h2-landing" style="font-size: 2em;">The Official Trailer of Minecraft. </h2>
+      <video
+        width="500"
+        height="300"
+        autoplay
+        loop
+        muted
+        controls
+        src="video/Official Minecraft Trailer.mp4"
+      ></video>
 
     <footer class="footer">
       <button onclick="favicon_click()" id="upscroll">
